@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* VARIABLES */
+
+:root {
+    --background-color: #efefef;
+    --box-color: #fff;
+    --box-shadow: 0px 7px 18px -4px rgba(28, 26, 26, 0.2);
+    --border: 1px rgb(206, 206, 206) solid;
+}
+
+/* GENERAL */
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    transition: all .2s ease-out;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+}
+
+
+/* MAIN BOXES */
+
+nav {
+    background: var(--box-color);
+    box-shadow: var(--box-shadow);
+    flex-direction: column;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+
+    a {
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        border-radius: .5rem;
+        padding: .5rem;
+        color: gray;
+        text-wrap: nowrap;
+
+        &:hover {
+            background-color: var(--background-color);
+            color: black;
+        }
+    }
+}
+
+
+main {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    
+    .container {
+        background-color: var(--box-color);
+        box-shadow: var(--box-shadow);
+        margin: 1rem 1rem 1rem 0;
+        flex-direction: column;
+        border: var(--border);
+        border-radius: .5rem;
+        align-items: center;
+        padding: 2rem 3rem;
+        display: flex;
+        
+        .images {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+
+            img {
+                height: 13rem;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 2rem;
+        }        
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/*COMPONENT CSS*/
+button{
+    border-radius: 100%;
+    box-shadow: var(--box-shadow);
+}
+button:hover{
+    background: grey;
+}
+/*COMPONENT CSS*/
