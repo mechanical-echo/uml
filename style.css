@@ -106,23 +106,39 @@ button{
     height:20px;
     /*border-radius: 100%;*/
     box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 button:hover{
     background: grey;
+    border-color: grey;
 }
-.comp{
-    a{
-        display:flex;
-        flex-direction: row;
-        justify-content:center;
-        text-align:center;
-    }
+
+
     .saturs{
         display:flex;
-        flex-direction: row;
-        gap: 1.5rem;
+        gap:1.5rem;
+        flex-direction: column;
         border-radius: 2rem;
         box-shadow: var(--box-shadow);
+        width:600px;
+        height: 200px;
+        margin: 4rem;
+
     }
-}
+.saturs a{
+        display:flex;
+        gap: 1.5rem; 
+        justify-content:center;
+        align-items: center;
+    }
+    .saturs a:hover{
+        background: grey;
+    }
+
+   
+
+
 /*COMPONENT CSS*/
