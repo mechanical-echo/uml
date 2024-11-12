@@ -119,16 +119,13 @@ function hideOnHover() {
 }
 
 
+let questions = document.querySelectorAll(".jautajums-row")
 
-document.querySelectorAll('.atbilde').forEach(button => {
-    button.addEventListener('click', () => {
-        const isCorrect = button.id === 'true';
-        document.querySelectorAll('.atbilde').forEach(btn => {
-            if (btn.id === 'true') {
-                btn.style.backgroundColor = 'green';
-            } else {
-                btn.style.backgroundColor = 'red';
-            }
-        });
-    });
-});
+
+function showAnswers(id) {
+    const answers = questions[id].children
+    Array.from(answers).forEach((answer) => {
+        answer.classList.add("answered");
+    })
+}
+

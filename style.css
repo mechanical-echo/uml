@@ -265,6 +265,17 @@ li {
     margin: .3rem 0;
 }
 
+.answered {
+    background-color: #880000cc !important;
+}
+.answered div {
+    color: white !important;
+}
+
+#true.answered {
+    background-color: #008800cc !important;
+}
+
 .hidden {
     position: fixed;
     opacity: 0%;
