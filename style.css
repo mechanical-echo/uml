@@ -297,7 +297,7 @@ button:hover{
 }
 .bx{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: var(--box-shadow);
 }
 
@@ -308,6 +308,11 @@ button:hover{
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
     margin-bottom: 1rem;
+}
+.jautajums-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
 .atbilde{
     background-color: var(--background-color);

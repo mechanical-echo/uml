@@ -16,7 +16,7 @@
       <a onclick="changePage(0)" class="navBtn active"> Sākums </a>
       <a onclick="changePage(1)" class="navBtn"> UML Sequences </a>
       <a onclick="changePage(2)" class="navBtn"> UML Component </a>
-	  <a onclick="changePage(3)" class="navBtn"> UML Tests </a>
+      <a onclick="changePage(3)" class="navBtn"> UML Tests </a>
     </nav>
 
     <!-- Contents -->
@@ -110,9 +110,9 @@
         </div>
       </div>
     </main>
-<!--Sequence-->
+    <!--Sequence-->
     <main id="sequence" class="hidden">
-      <div class="container  sticker sticker-diag">
+      <div class="container sticker sticker-diag">
         <h1 class="title">Sekvences diagramma</h1>
 
         <div class="row">
@@ -181,141 +181,133 @@
         </div>
       </div>
     </main>
-	<!--Sequence-->
+    <!--Sequence-->
 
-	<!--Component-->
+    <!--Component-->
     <main id="component" class="hidden">
-		<div class="container  sticker sticker-diag">
-		  <h1 class="title">Komponentu diagramma</h1>
-  
-		  <div class="row">
-			<div class="container">
-			  <h3 style="text-align: center">Izmantošanas gadījumi:</h3>
-			  Risina komponentu organizāciju un sistēmas arhitektūru
-			</div>
-			<div class="container">
-			  <h3>Izmanto, kad nepieciešams:</h3>
-			  <ul>
-				<li>Dokumentēt sistēmas arhitektūru</li>
-				<li>Komponentu savstarpējās atkarības analīze</li>
-				<li>Komponentu atkārtota izmantošana</li>
-				<li>Sistēmas integrācijas pārvaldība</li>
-			  </ul>
-			</div>
-		  </div>
-  
-		  <div class="row">
-			<div class="container">
-			  <h3>Klasifikācija:</h3>
-			  <p>
-				Pieder pie
-				<b>struktūras</b>
-				(structure) diagrammām, jo attēlo sistēmas fizisko arhitektūru un komponentu savstarpējās attiecības.
-			  </p>
-			</div>
-			<div class="container">
-			  <h3>Definīcija un mērķis:</h3>
-			  <ul>
-				<li>
-				Attēlo sistēmas fizisko arhitektūru
-				  <b>komponentus</b>
-				  un
-				  <b>savstarpējās attiecības</b>
-				  laika gaitā
-				</li>
-				<li>
-				  Parāda,
-				  <b>kā</b>
-				  komponentu organizāciju un savstarpējās attiecība
-				  <b>sadarbojas</b>
-				  un
-				  <b>nodrošina skaidru pārskatu</b>
-				  par sistēmas arhitektūru
-				</li>
-			  </ul>
-			</div>
-		  </div>
-  
-		  <div class="container">
-			<h3>Galvenie elementi:</h3>
-			<div class="image-cont">
-			  <div id="image-desc">hello world</div>
-			  <div id="image">
-				<img
-				  height="100px"
-				  src="./images/sequence/uml-activation-box-symbol.svg"
-				/>
-			  </div>
-			</div>
-			<div class="row">
-			  <button class="btn" id="btn-prev">Iepriekšējais</button>
-			  <button class="btn" id="btn-next">Nākamais</button>
-			</div>
-		  </div>
-		</div>
-	  </main>
-	  <!--Component-->
+      <div class="container sticker sticker-diag">
+        <h1 class="title">Komponentu diagramma</h1>
 
+        <div class="row">
+          <div class="container">
+            <h3 style="text-align: center">Izmantošanas gadījumi:</h3>
+            Risina komponentu organizāciju un sistēmas arhitektūru
+          </div>
+          <div class="container">
+            <h3>Izmanto, kad nepieciešams:</h3>
+            <ul>
+              <li>Dokumentēt sistēmas arhitektūru</li>
+              <li>Komponentu savstarpējās atkarības analīze</li>
+              <li>Komponentu atkārtota izmantošana</li>
+              <li>Sistēmas integrācijas pārvaldība</li>
+            </ul>
+          </div>
+        </div>
 
-	  <!--Test-->
-	  <main id="test" class="hidden">
-		<div class="container  sticker sticker-diag">
-		  <h1 class="title">Tests</h1>
-		  <div class="bx">
-		  <div class="jautajums">
-			<p>Kas ir UML secības diagramma?</p>
-		</div>
+        <div class="row">
+          <div class="container">
+            <h3>Klasifikācija:</h3>
+            <p>
+              Pieder pie
+              <b>struktūras</b>
+              (structure) diagrammām, jo attēlo sistēmas fizisko arhitektūru un
+              komponentu savstarpējās attiecības.
+            </p>
+          </div>
+          <div class="container">
+            <h3>Definīcija un mērķis:</h3>
+            <ul>
+              <li>
+                Attēlo sistēmas fizisko arhitektūru
+                <b>komponentus</b>
+                un
+                <b>savstarpējās attiecības</b>
+                laika gaitā
+              </li>
+              <li>
+                Parāda,
+                <b>kā</b>
+                komponentu organizāciju un savstarpējās attiecība
+                <b>sadarbojas</b>
+                un
+                <b>nodrošina skaidru pārskatu</b>
+                par sistēmas arhitektūru
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container">
+          <h3>Galvenie elementi:</h3>
+          <div class="image-cont">
+            <div id="image-desc">hello world</div>
+            <div id="image">
+              <img
+                height="100px"
+                src="./images/sequence/uml-activation-box-symbol.svg"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn" id="btn-prev">Iepriekšējais</button>
+            <button class="btn" id="btn-next">Nākamais</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Component-->
+
+    <!--Test-->
+    <main id="test" class="hidden">
+      <div class="container sticker sticker-diag">
+        <h1 class="title">Tests</h1>
+        <div class="bx">
+          <div class="jautajums">
+            <p>Kas ir UML secības diagramma?</p>
+          </div>
+
+          <div class="jautajums-row">
+            <div class="atbilde">Diagramma, kas attēlo sistēmas struktūru</div>
+            <div class="atbilde" id="true">
+              Diagramma, kas attēlo objektu mijiedarbību noteiktā laika secībā
+            </div>
+            <div class="atbilde">Diagramma, kas attēlo datu plūsmu sistēmā</div>
+          </div>
+        </div>
+        <div class="bx">
+          <div class="jautajums">
+            <p>Kādi ir galvenie UML secības diagrammas elementi?</p>
+          </div>
+          <div class="jautajums-row">
 			<div class="atbilde">
-				Diagramma, kas attēlo sistēmas struktūru
+			  Aktori, objekti, ziņojumi, laika ass, aktivitātes bārs
 			</div>
-			<div class="atbilde" id="true">
-				Diagramma, kas attēlo objektu mijiedarbību noteiktā laika secībā
-			</div>
-			<div class="atbilde">
-				Diagramma, kas attēlo datu plūsmu sistēmā
-			</div>
-		</div>
-		<div class="bx">
-			<div class="jautajums">
-			<p>Kādi ir galvenie UML secības diagrammas elementi?</p>
-		</div>
-			<div class="atbilde">
-				Aktori, objekti, ziņojumi, laika ass, aktivitātes bārs
-			</div>
-			<div class="atbilde">
-				Klases, objekti, attiecības, atribūti
-			</div>
-			<div class="atbilde">
-				Komponenti, savienojumi, interfeisi
-			</div>
+			<div class="atbilde">Klases, objekti, attiecības, atribūti</div>
+			<div class="atbilde">Komponenti, savienojumi, interfeisi</div>
 			<p>Kāds ir UML secības diagrammas mērķis?</p>
+			<div class="atbilde">Attēlot sistēmas struktūru</div>
 			<div class="atbilde">
-				Attēlot sistēmas struktūru
+			  Attēlot objektu mijiedarbību noteiktā laika secībā
 			</div>
-			<div class="atbilde">
-				Attēlot objektu mijiedarbību noteiktā laika secībā
-			</div>
-			<div class="atbilde">
-				Attēlot sistēmas komponentu savienojumus
-			</div>
-		</div>
-		<div class="bx">
-		<div class="jautajums">
-			<p>Kāds ir UML secības diagrammas galvenais simbols, kas attēlo informācijas nosūtīšanu starp objektiem?</p>
-		</div>
-			<div class="atbilde">
-				Aktors
-			</div>
-			<div class="atbilde">
-				Objekts
-			</div>
-			<div class="atbilde">
-				Ziņojums
-			</div>
-		</div>
-		</div>
-	  </main>
-	  <!--Test-->
+			<div class="atbilde">Attēlot sistēmas komponentu savienojumus</div>
+		  </div>
+        </div>
+        <div class="bx">
+          <div class="jautajums">
+            <p>
+              Kāds ir UML secības diagrammas galvenais simbols, kas attēlo
+              informācijas nosūtīšanu starp objektiem?
+            </p>
+          </div>
+          <div class="jautajums-row">
+			<div class="atbilde">Aktors</div>
+			<div class="atbilde">Objekts</div>
+			<div class="atbilde">Ziņojums</div>
+		  </div>
+        </div>
+      </div>
+    </main>
+    <!--Test-->
 
     <footer class="footer">
       <div class="waves">
