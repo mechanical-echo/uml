@@ -131,12 +131,12 @@ function showAnswers(id) {
 
 
 
-function showContent() {
-    var content = document.getElementById('content');
-    if (content.style.display === "none") {
-        content.style.display = "block";
+function showContent(el) {
+    let div = el.nextSibling.nextSibling
+    if (div.style.display === "none") {
+        div.style.display = "block";
     } else {
-        content.style.display = "none";
+        div.style.display = "none";
     }
 }
 
