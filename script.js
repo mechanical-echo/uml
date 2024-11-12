@@ -134,7 +134,7 @@ function showAnswers(id) {
 function showContent(el) {
     let div = el.nextSibling.nextSibling
     if (div.style.display === "none") {
-        div.style.display = "block";
+        div.style.display = "flex";
     } else {
         div.style.display = "none";
     }
