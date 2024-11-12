@@ -117,3 +117,18 @@ function hideOnHover() {
     placeholder.classList.remove("hidden")
     image.classList.add("hidden")
 }
+
+
+
+document.querySelectorAll('.atbilde').forEach(button => {
+    button.addEventListener('click', () => {
+        const isCorrect = button.id === 'true';
+        document.querySelectorAll('.atbilde').forEach(btn => {
+            if (btn.id === 'true') {
+                btn.style.backgroundColor = 'green';
+            } else {
+                btn.style.backgroundColor = 'red';
+            }
+        });
+    });
+});

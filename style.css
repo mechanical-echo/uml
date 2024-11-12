@@ -342,6 +342,13 @@ button:hover{
     color: white;
 }
 
+.foto{
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*COMPONENT CSS*/
 
