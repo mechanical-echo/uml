@@ -1,65 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 2000 2000" width="500" height="500">
-	<title>OJXLCW1</title>
-	<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   viewBox="0 0 1366.5 828.90002"
+   width="341.625"
+   height="207.22501"
+   id="svg26"
+   sodipodi:docname="cloud.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     id="namedview26"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5421709"
+     inkscape:cx="159.19117"
+     inkscape:cy="137.46855"
+     inkscape:window-width="1640"
+     inkscape:window-height="871"
+     inkscape:window-x="84"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g8" />
+  <title
+     id="title1">OJXLCW1</title>
+  <style
+     id="style1">
 		.s0 { fill: #d6d6d6 } 
 		.s1 { fill: #ffffff;stroke: #7091e6;stroke-miterlimit:10;stroke-width: 50 } 
 	</style>
-	<g id="Layer 1">
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-				<path id="&lt;Path&gt;" fill-rule="evenodd" class="s0" d="m1414.7 795.3c5.2-22.6 8-45.9 8-70 0-178.5-151.4-323.3-338.2-323.3-128.5 0-240.2 68.5-297.4 169.3-34.4-18-73.8-28.4-115.7-28.4-132.6 0-240 102.8-240 229.5 0 3.3 0.1 6.6 0.2 9.9h-0.7c-113.2 0-204.9 87.7-204.9 195.9 0 108.2 91.7 195.9 204.9 195.9h910.5c113.1 0 204.9-87.7 204.9-195.9 0-83.5-54.7-154.7-131.6-182.9z"/>
-			</g>
-			<g id="&lt;Group&gt;">
-				<path id="&lt;Path&gt;" class="s1" d="m1318.5 738.7c4.8-21.1 7.5-43.1 7.5-65.6 0-167.3-141.9-302.9-316.9-302.9-120.3 0-225 64.2-278.6 158.7-32.2-17-69.1-26.6-108.4-26.6-124.2 0-224.8 96.2-224.8 214.9 0 3.1 0.1 6.2 0.2 9.3h-0.7c-106 0-192 82.2-192 183.5 0 101.4 86 183.5 192 183.5h853c106 0 191.9-82.1 191.9-183.5 0-78.2-51.2-144.9-123.2-171.3z"/>
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-		<g id="&lt;Group&gt;">
-			<g id="&lt;Group&gt;">
-			</g>
-			<g id="&lt;Group&gt;">
-			</g>
-		</g>
-	</g>
+  <g
+     id="Layer 1"
+     transform="translate(-179.8,-345.2)">
+    <g
+       id="g2">
+      <g
+         id="&lt;Group&gt;" />
+      <g
+         id="g1" />
+    </g>
+    <g
+       id="g5">
+      <g
+         id="g3" />
+      <g
+         id="g4" />
+    </g>
+    <g
+       id="g8">
+      <g
+         id="g6">
+        <path
+           id="&lt;Path&gt;"
+           fill-rule="evenodd"
+           class="s0"
+           d="m 1414.7,795.3 c 5.2,-22.6 8,-45.9 8,-70 0,-178.5 -151.4,-323.3 -338.2,-323.3 -128.5,0 -240.2,68.5 -297.4,169.3 -34.4,-18 -73.8,-28.4 -115.7,-28.4 -132.6,0 -240,102.8 -240,229.5 0,3.3 0.1,6.6 0.2,9.9 h -0.7 C 317.7,782.3 226,870 226,978.2 c 0,108.2 91.7,195.9 204.9,195.9 h 910.5 c 113.1,0 204.9,-87.7 204.9,-195.9 0,-83.5 -54.7,-154.7 -131.6,-182.9 z"
+           style="fill:#e1e4f8;fill-opacity:0.76447874"
+           sodipodi:nodetypes="csscsscsssssc" />
+      </g>
+      <g
+         id="g7">
+        <path
+           id="path6"
+           class="s1"
+           d="m 1318.5,738.7 c 4.8,-21.1 7.5,-43.1 7.5,-65.6 0,-167.3 -141.9,-302.9 -316.9,-302.9 -120.3,0 -225,64.2 -278.6,158.7 -32.2,-17 -69.1,-26.6 -108.4,-26.6 -124.2,0 -224.8,96.2 -224.8,214.9 0,3.1 0.1,6.2 0.2,9.3 h -0.7 c -106,0 -192,82.2 -192,183.5 0,101.4 86,183.5 192,183.5 h 853 c 106,0 191.9,-82.1 191.9,-183.5 0,-78.2 -51.2,-144.9 -123.2,-171.3 z" />
+      </g>
+    </g>
+    <g
+       id="g11">
+      <g
+         id="g9" />
+      <g
+         id="g10" />
+    </g>
+    <g
+       id="g14">
+      <g
+         id="g12" />
+      <g
+         id="g13" />
+    </g>
+    <g
+       id="g17">
+      <g
+         id="g15" />
+      <g
+         id="g16" />
+    </g>
+    <g
+       id="g20">
+      <g
+         id="g18" />
+      <g
+         id="g19" />
+    </g>
+    <g
+       id="g23">
+      <g
+         id="g21" />
+      <g
+         id="g22" />
+    </g>
+    <g
+       id="g26">
+      <g
+         id="g24" />
+      <g
+         id="g25" />
+    </g>
+  </g>
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>OJXLCW1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

@@ -104,3 +104,16 @@ function changePage(page) {
         }
     })
 }
+let placeholder = document.querySelector("#placeholder")
+let image = document.querySelector("#img")
+
+function showOnHover(src) {
+    placeholder.classList.add("hidden")
+    image.classList.remove("hidden")
+    image.src = src
+}
+
+function hideOnHover() {
+    placeholder.classList.remove("hidden")
+    image.classList.add("hidden")
+}
