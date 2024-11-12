@@ -16,7 +16,7 @@
       <a onclick="changePage(0)" class="navBtn active"> Sākums </a>
       <a onclick="changePage(1)" class="navBtn"> UML Sequences </a>
       <a onclick="changePage(2)" class="navBtn"> UML Component </a>
-      <a onclick="changePage(3)" class="navBtn"> UML Tests </a>
+      <a onclick="changePage(3)" class="navBtn"> UML Tests sequences </a>
       <a onclick="changePage(4)" class="navBtn"> UML Tests component </a>
     </nav>
 
@@ -240,19 +240,33 @@
 
         <div class="container">
           <h3>Galvenie elementi:</h3>
-          <div class="image-cont">
-            <div id="image-desc">hello world</div>
-            <div id="image">
-              <img
-                height="100px"
-                src="./images/sequence/uml-activation-box-symbol.svg"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn" id="btn-prev">Iepriekšējais</button>
-            <button class="btn" id="btn-next">Nākamais</button>
-          </div>
+          <button onclick="showContent()" >Komponents</button>
+		  <div id="content">
+		  <img src="images/component/component.png">
+		  <p>Attēlo sistēmas fizisko daļu, piemēram, programmatūras moduli, bibliotēku vai datubāzi. Komponenti ir galvenie elementi, kas veido sistēmu.</p>
+		</div>
+		<button onclick="showContent()" >Komponents</button>
+		  <div id="content">
+		  <img src="images/component/dependency.png">
+		  <p>Zīmējiet atkarības starp komponentiem, izmantojot pārtrauktas bultiņas</p>
+		</div>
+		<button onclick="showContent()" >Komponents</button>
+		  <div id="content">
+		  <img src="images/component/port.png">
+		  <p>Ports norāda, ka pats komponents nenodrošina nepieciešamās saskarnes. Tā vietā komponents deleģē saskarnes iekšējai klasei</p>
+		</div>
+		<button onclick="showContent()" >Komponents</button>
+		  <div id="content">
+		  <img src="images/component/joint.png">
+		  <p>Komponentus var "savienot" kopā, veidojot apakšsistēmas, izmantojot lodveida savienojumu</p>
+		</div>
+		<button onclick="showContent()" >Komponents</button>
+		  <div id="content">
+		  <img src="images/component/interface.png">
+		  <p>Nodrošinātie saskarnes simboli ar pilnu apli to galā attēlo saskarni, ko nodrošina komponents – šis "konfesijas" simbols ir saīsinājums saskarnes klasifikatora realizācijas attiecībām.
+
+			Nepieciešamie interfeisa simboli, kuru galā ir tikai pusaplis (pazīstami arī kā ligzdas), apzīmē komponentam nepieciešamo saskarni (abos gadījumos saskarnes nosaukums atrodas pie paša interfeisa simbola).</p>
+		</div>
         </div>
       </div>
 	  <h1 class="title">Komponentu diagramma Jūlija</h1>
@@ -328,11 +342,11 @@
 			</div>
   
 			<div class="jautajums-row">
-			  <div class="atbilde"><div>Diagramma, kas attēlo sistēmas struktūru</div></div>
-			  <div class="atbilde" id="true">
+			  <div class="atbilde" onclick="showAnswers(4)"><div>Diagramma, kas attēlo sistēmas struktūru</div></div>
+			  <div class="atbilde" onclick="showAnswers(4)" id="true">
 				<div>Diagramma, kas attēlo sistēmas komponentu savstarpējās attiecības</div>
 			  </div>
-			  <div class="atbilde"><div>Diagramma, kas attēlo objektu mijiedarbību noteiktā laika secībā</div></div>
+			  <div class="atbilde" onclick="showAnswers(4)"><div>Diagramma, kas attēlo objektu mijiedarbību noteiktā laika secībā</div></div>
 			</div>
 		  </div>
 		  <div class="bx">
@@ -341,12 +355,12 @@
 			</div>
 			<div class="jautajums-row">
 			  <div>
-				<div class="atbilde" id="true">
+				<div class="atbilde" onclick="showAnswers(5)" id="true">
 					<div>Komponenti, savienojumi, interfeisi</div>
 				</div>
 			  </div>
-			  <div class="atbilde"><div>Aktori, objekti, ziņojumi</div></div>
-			  <div class="atbilde"><div>Klases, objekti, attiecības</div></div>
+			  <div class="atbilde" onclick="showAnswers(5)"><div>Aktori, objekti, ziņojumi</div></div>
+			  <div class="atbilde" onclick="showAnswers(5)"><div>Klases, objekti, attiecības</div></div>
 			</div>
 		  </div>
 		  <div class="bx">
@@ -354,13 +368,13 @@
 			  <p>Kāds ir UML komponentu diagrammas mērķis?</p>
 			</div>
 			<div class="jautajums-row">
-			  <div class="atbilde"><div>Attēlot sistēmas struktūru</div></div>
+			  <div class="atbilde" onclick="showAnswers(6)"><div>Attēlot sistēmas struktūru</div></div>
 			  <div>
-				<div class="atbilde">
+				<div class="atbilde" onclick="showAnswers(6)">
 				  <div>Attēlot objektu mijiedarbību noteiktā laika secībā</div>
 				</div>
 			  </div>
-			  <div class="atbilde" id="true"><div>Attēlot sistēmas komponentu savstarpējās attiecības</div></div>
+			  <div class="atbilde" onclick="showAnswers(6)" id="true"><div>Attēlot sistēmas komponentu savstarpējās attiecības</div></div>
 			</div>
 		  </div>
 		  <div class="bx">
@@ -370,9 +384,9 @@
 			  </p>
 			</div>
 			<div class="jautajums-row">
-			  <div class="atbilde"><div>Sistēmas struktūras dokumentēšana</div></div>
-			  <div class="atbilde"><div>Sistēmas dinamiskās uzvedības dokumentēšana</div></div>
-			  <div class="atbilde" id="true"><div>Komponentu savstarpējo attiecību dokumentēšana</div></div>
+			  <div class="atbilde" onclick="showAnswers(7)"><div>Sistēmas struktūras dokumentēšana</div></div>
+			  <div class="atbilde" onclick="showAnswers(7)"><div>Sistēmas dinamiskās uzvedības dokumentēšana</div></div>
+			  <div class="atbilde" onclick="showAnswers(7)" id="true"><div>Komponentu savstarpējo attiecību dokumentēšana</div></div>
 			</div>
 		  </div>
 		</div>
