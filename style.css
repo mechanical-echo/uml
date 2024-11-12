@@ -299,6 +299,9 @@ button:hover{
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow);
+    width: 90rem;
+    height: 10rem;
+    gap: 1rem;
 }
 
 .jautajums{
@@ -318,6 +321,11 @@ button:hover{
     background-color: var(--background-color);
     box-shadow: var(--box-shadow);
     border-radius: 2rem;
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    justify-content: center;
+    text-wrap: wrap;
 }
 .atbilde:hover{
     cursor: pointer;
