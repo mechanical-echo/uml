@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* VARIABLES */
-
 :root {
     --background-color: #ADBBDA66;
     --box-color: white;
@@ -13,14 +10,12 @@
     --text-color: #3D52A0;
 }
 
-/* GENERAL */
-
 * {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     margin: 0;
-    transition: all .2s ease-out;
+    transition: all .5s cubic-bezier(1,-0.76,0,1.5);
     color: var(--text-color);
 }
 
@@ -31,58 +26,57 @@ html, body {
 body {
     background-color: var(--background-color);
     display: flex;
+    padding-top: 4rem;
+    overflow-y: scroll;
 }
-
-
-/* MAIN BOXES */
 
 nav {
-    position: relative;
-    background: var(--box-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    background-color: var(--box-color);
     box-shadow: var(--box-shadow);
-    flex-direction: column;
-    border: var(--border);
-    border-radius: .5rem;
-    padding: 2rem 1rem;
     display: flex;
-    margin: 1rem;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
 
-    a {
-        box-shadow: var(--box-shadow);
-        border: var(--border);
-        border-radius: .5rem;
-        background-color: var(--secondary-color);
-        padding: .5rem 1rem;
-        color: white;
-        text-wrap: nowrap;
-        font-weight: bold;
-
-        &:hover {
-            background-color: white !important;
-            color: var(--text-color);
-        }
-
-        &.active {
-            background-color: var(--accent-color);
-        }
-    }
-
-    h3 {
-        position: absolute;
-        bottom: 1rem;
-        font-size: 1rem;
-    }
 }
 
+nav a {
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: 1.4rem;
+    background-color: var(--secondary-color);
+    padding: .5rem 1rem;
+    color: white;
+    text-wrap: nowrap;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: white !important;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav a.active {
+    background-color: var(--box-color);
+    color: var(--text-color);
+    border: none;
+    box-shadow: none;
+    transform: translateY(55%);
+    font-size: larger;
+}
 
 main {
     flex-direction: column;
     display: flex;
+    align-items: center;
     width: 100%;
     margin: 1rem 1rem 0 0;
     height: 96.5%;
-    overflow-y: scroll;
     
     .container {
         background-color: var(--box-color);
@@ -94,6 +88,7 @@ main {
         align-items: center;
         padding: 2rem 3rem;
         display: flex;
+        max-width: 85rem;
         
         .images {
             justify-content: space-around;
@@ -114,6 +109,77 @@ main {
             margin-bottom: .3rem;
         }      
     }
+}
+#start .contents {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+
+#start .contents .container:last-child {
+    grid-column: span 2 / span 2;
+    
+}
+
+.sticker {
+    position: relative;
+}
+  
+.sticker::before,
+.sticker::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.sticker-diag::before {
+    top: -3.5rem;
+    right: -3.5rem;
+    background-image: url('images/cloud.svg');
+    transform: scaleX(-1);
+}
+
+.sticker-diag::after {
+    bottom: -6.5rem;
+    left: -3rem;
+    background-image: url('images/cloud.svg');
+}
+
+.sticker-hor::before {
+    bottom: -6.5rem;
+    left: -3rem;
+    background-image: url('images/cloud.svg');
+}
+
+.sticker-hor::after {
+    bottom: -6.5rem;
+    right: -3rem;
+    background-image: url('images/cloud.svg');
+    transform: scaleX(-1);
+}
+
+body::-webkit-scrollbar {
+    width: .7rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 1rem;
+}
+
+*::selection {
+    background-color: var(--accent-color);
+    color: white;
+
 }
 
 footer {
@@ -160,6 +226,13 @@ ul {
 }
 li {
     margin: .3rem 0;
+}
+
+.hidden {
+    position: absolute;
+    opacity: 0%;
+    transform: translateY(-50%);
+    z-index: -5;
 }
 
 /*COMPONENT CSS*/

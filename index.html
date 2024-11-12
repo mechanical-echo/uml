@@ -16,99 +16,187 @@
 	<body>
 
 		<!-- Navigation -->
-		<nav>
-			<a href="/"
-				class="active">
+		<nav class="sticker-hor">
+			<a onclick="changePage(0)"
+				class="navBtn active">
 				Sākums
 			</a>
-			<a href>UML Component</a>
-			<a href="./pages/sequence.html">UML Sequences</a>
-
-			<h3>
-				Darbu taisīja:
-				<br>
-				Jūlija Žitkova,
-				<br>
-				Sofija Dišlovaja
-			</h3>
+			<a onclick="changePage(1)"
+				class="navBtn">
+				UML Sequences
+			</a>
+			<a onclick="changePage(2)"
+				class="navBtn">
+				UML Component
+			</a>
 		</nav>
 
 		<!-- Contents -->
-		<main>
-			<div class="container">
+		<main id="start">
+			<div class="container sticker sticker-diag">
 				<h1>UML Diagrammas</h1>
-				<div class="container">
-					<p>
-						UML diagrammas ir standartizēta vizuālās modelēšanas valoda, ko izmanto programmatūras sistēmu projektēšanā un dokumentēšanā, lai grafiski attēlotu sistēmas struktūru, uzvedību un mijiedarbību.
-					</p>
-				</div>
-				<div class="container">
-					<h3>
-						UML diagrammas iedalās 2 galvenajās kategorijās:
-					</h3>
-					<div class="row">
-						<div>
-							<h3>
-								Strukturālās diagrammas:
-							</h3>
-							<ul>
-								<li>
-									Klašu diagramma (visbiežāk lietotā)
-								</li>
-								<li>Objektu diagramma</li>
-								<li>
-									Komponenšu diagramma
-								</li>
-								<li>
-									Izvietojuma diagramma
-								</li>
-							</ul>
-						</div>
-
-						<div>
-							<h3>
-								Uzvedības diagrammas:
-							</h3>
-							<ul>
-								<li>
-									Lietojumgadījumu diagramma
-								</li>
-								<li>Secības diagramma</li>
-								<li>
-									Aktivitāšu diagramma
-								</li>
-								<li>Stāvokļu diagramma</li>
-							</ul>
+				<div class="contents">
+					<div class="container">
+						<p>
+							UML diagrammas ir standartizēta vizuālās modelēšanas valoda, ko izmanto programmatūras sistēmu projektēšanā un dokumentēšanā, lai grafiski attēlotu sistēmas struktūru, uzvedību un mijiedarbību.
+						</p>
+					</div>
+					<div class="container">
+						<h3>
+							Visbiežāk izmantotās ir:
+						</h3>
+						<div class="row">
+							<div>
+								<ul>
+									<li>
+										Klašu diagrammas (sistēmas struktūrai)
+									</li>
+									<li>
+										Lietojumgadījumu diagrammas (funkcionalitātei)
+									</li>
+									<li>
+										Secības diagrammas (objektu mijiedarbībai)
+									</li>
+									<li>
+										Aktivitāšu diagrammas (biznesa procesiem)
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-
-				</div>
-
-				<div class="container">
-					<h3>
-						Visbiežāk izmantotās ir:
-					</h3>
-					<div class="row">
-						<div>
-
-							<ul>
-								<li>
-									Klašu diagrammas (sistēmas struktūrai)
-								</li>
-								<li>
-									Lietojumgadījumu diagrammas (funkcionalitātei)
-								</li>
-								<li>
-									Secības diagrammas (objektu mijiedarbībai)
-								</li>
-								<li>
-									Aktivitāšu diagrammas (biznesa procesiem)
-								</li>
-							</ul>
+					<div class="container">
+						<h3>
+							UML diagrammas iedalās 2 galvenajās kategorijās:
+						</h3>
+						<div class="row">
+							<div>
+								<h3>
+									Strukturālās diagrammas:
+								</h3>
+								<ul>
+									<li>
+										Klašu diagramma (visbiežāk lietotā)
+									</li>
+									<li>Objektu diagramma</li>
+									<li>
+										Komponenšu diagramma
+									</li>
+									<li>
+										Izvietojuma diagramma
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h3>
+									Uzvedības diagrammas:
+								</h3>
+								<ul>
+									<li>
+										Lietojumgadījumu diagramma
+									</li>
+									<li>Secības diagramma</li>
+									<li>
+										Aktivitāšu diagramma
+									</li>
+									<li>Stāvokļu diagramma</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<main id="sequence"
+			class="hidden">
+
+			<div class="container">
+				<h1>Sekvences diagramma</h1>
+			</div>
+
+			<div class="container">
+				<h3>Klasifikācija:</h3>
+				<p>
+					Pieder pie
+					<b>uzvedības</b>
+					(behavior) diagrammām, jo attēlo sistēmas dinamisko aspektu
+				</p>
+			</div>
+
+			<div class="container">
+				<h3>
+					Definīcija un mērķis:
+				</h3>
+				<ul>
+					<li>
+						Attēlo objektu
+						<b>mijiedarbību</b>
+						un
+						<b>ziņojumu apmaiņu</b>
+						laika gaitā
+					</li>
+					<li>
+						Parāda,
+						<b>kā</b>
+						objekti
+						<b>sadarbojas</b>
+						un
+						<b>kādā secībā</b>
+						notiek darbības
+					</li>
+				</ul>
+			</div>
+
+			<div class="container">
+				<h3>
+					Izmantošanas gadījumi:
+				</h3>
+				<div class="container">
+					Risina sistēmas dinamiskās uzvedības vizualizācijas problēmu
+				</div>
+				<div class="container">
+					<h3>
+						Izmanto, kad nepieciešams:
+					</h3>
+					<ul>
+						<li>
+							Dokumentēt un analizēt lietojumgadījumu scenārijus
+						</li>
+						<li>
+							Modelēt sarežģītu procesu loģiku
+						</li>
+						<li>
+							Saprast objektu mijiedarbības secību
+						</li>
+						<li>
+							Plānot API un mikroservisu komunikāciju
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<h3>Galvenie elementi:</h3>
+
+				<div class="image-cont">
+					<div id="image-desc">hello world</div>
+					<div id="image">
+						<img height="100px"
+							src="./images/sequence/uml-activation-box-symbol.svg">
+					</div>
+				</div>
+				<div class="row">
+					<button class="btn"
+						id="btn-prev">
+						Iepriekšējais
+					</button>
+					<button class="btn"
+						id="btn-next">
+						Nākamais
+					</button>
+				</div>
+			</div>
+		</main>
+
 	</body>
 </html>
