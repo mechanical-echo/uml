@@ -360,6 +360,20 @@ button:hover{
     align-items: center;
 }
 
+button{
+    border-radius: 2rem;
+    background: var(--background-color);
+    color: #fff;
+    border-color: var(--background-color);
+    margin: .5rem;
+}
+button:hover{
+    cursor: pointer;
+    background: var(--accent-color);
+    color: #fff;
+}
+
+
 
 /*COMPONENT CSS*/
 
