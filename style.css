@@ -27,9 +27,8 @@ html{
 }
 
 body {
-    height: 101%;
+    height: 100%;
     background-color: var(--background-color);
-    display: flex;
     padding-top: 7rem;
     overflow-y: scroll;
 }
@@ -90,8 +89,7 @@ main {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 1rem 1rem 0 0;
-    height: 96.5%;
+    margin: 1rem 1rem 15rem 0;
     transition: var(--transition-jumpy);
     
     .container {
@@ -207,12 +205,6 @@ body::-webkit-scrollbar-thumb {
     color: white;
 }
 
-footer {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-}
-
 .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -274,7 +266,7 @@ li {
 }
 
 .hidden {
-    position: absolute;
+    position: fixed;
     opacity: 0%;
     transform: translateY(-35%);
     z-index: -5;

@@ -1,264 +1,231 @@
 <!DOCTYPE html>
 <html lang="lv">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport"
-			content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
-		<title>UML Diagrammas</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <title>UML Diagrammas</title>
 
-		<link rel="stylesheet" href="style.css">
-		<script src="script.js"
-			defer></script>
-	</head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-	<body>
+  <body>
+    <nav class="sticker-inline">
+      <a onclick="changePage(0)" class="navBtn active"> Sākums </a>
+      <a onclick="changePage(1)" class="navBtn"> UML Sequences </a>
+      <a onclick="changePage(2)" class="navBtn"> UML Component </a>
+    </nav>
 
-		<nav class="sticker-inline">
-			<a onclick="changePage(0)"
-				class="navBtn active">
-				Sākums
-			</a>
-			<a onclick="changePage(1)"
-				class="navBtn">
-				UML Sequences
-			</a>
-			<a onclick="changePage(2)"
-				class="navBtn">
-				UML Component
-			</a>
-		</nav>
+    <!-- Contents -->
+    <main id="start">
+      <div class="container sticker sticker-diag">
+        <h1 class="title">UML Diagrammas</h1>
+        <div class="contents">
+          <div class="container">
+            <h3>Kas tas ir?</h3>
+            <p>
+              <b>UML diagrammas</b>
+              ir standartizēta vizuālās modelēšanas valoda, ko izmanto
+              programmatūras sistēmu
+              <b> projektēšanā un dokumentēšanā </b>
+              , lai grafiski attēlotu sistēmas
+              <b> struktūru, uzvedību un mijiedarbību. </b>
+            </p>
+          </div>
+          <div class="container">
+            <h3>Visbiežāk izmantotās ir:</h3>
+            <div class="row">
+              <div>
+                <ul class="hover-ul">
+                  <li
+                    onmouseenter="showOnHover('/images/startpage/umlclass.webp')"
+                    onmouseleave="hideOnHover()"
+                  >
+                    Klašu diagrammas
+                    <br />
+                    (sistēmas struktūrai)
+                  </li>
+                  <li
+                    onmouseenter="showOnHover('/images/startpage/umlusecase.png')"
+                    onmouseleave="hideOnHover()"
+                  >
+                    Lietojumgadījumu diagrammas
+                    <br />
+                    (funkcionalitātei)
+                  </li>
+                  <li
+                    onmouseenter="showOnHover('/images/startpage/umlsequence.png')"
+                    onmouseleave="hideOnHover()"
+                  >
+                    Secības diagrammas
+                    <br />
+                    (objektu mijiedarbībai)
+                  </li>
+                  <li
+                    onmouseenter="showOnHover('/images/startpage/umlactivity.png')"
+                    onmouseleave="hideOnHover()"
+                  >
+                    Aktivitāšu diagrammas
+                    <br />
+                    (biznesa procesiem)
+                  </li>
+                </ul>
+              </div>
+              <div class="hover-images">
+                <p id="placeholder">
+                  Uzvietojiet kursoru
+                  <br />
+                  uz diagrammas veida
+                </p>
+                <img id="img" class="hidden" alt="images on hover" />
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h3>UML diagrammas iedalās 2 galvenajās kategorijās:</h3>
+            <div class="row">
+              <div>
+                <h3>Strukturālās diagrammas:</h3>
+                <ul>
+                  <li>Klašu diagramma (visbiežāk lietotā)</li>
+                  <li>Objektu diagramma</li>
+                  <li>Komponenšu diagramma</li>
+                  <li>Izvietojuma diagramma</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Uzvedības diagrammas:</h3>
+                <ul>
+                  <li>Lietojumgadījumu diagramma</li>
+                  <li>Secības diagramma</li>
+                  <li>Aktivitāšu diagramma</li>
+                  <li>Stāvokļu diagramma</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-		<!-- Contents -->
-		<main id="start">
-			<div class="container sticker sticker-diag">
-				<h1 class="title">UML Diagrammas</h1>
-				<div class="contents">
-					<div class="container">
-						<h3>Kas tas ir?</h3>
-						<p>
-							<b>UML diagrammas</b>
-							ir standartizēta vizuālās modelēšanas valoda, ko izmanto programmatūras sistēmu
-							<b>
-								projektēšanā un dokumentēšanā
-							</b>
-							, lai grafiski attēlotu sistēmas
-							<b>
-								struktūru, uzvedību un mijiedarbību.
-							</b>
-						</p>
-					</div>
-					<div class="container">
-						<h3>
-							Visbiežāk izmantotās ir:
-						</h3>
-						<div class="row">
-							<div>
-								<ul class="hover-ul">
-									<li onmouseenter="showOnHover('/images/startpage/umlclass.webp')"
-										onmouseleave="hideOnHover()">
-										Klašu diagrammas
-										<br>
-										(sistēmas struktūrai)
-									</li>
-									<li onmouseenter="showOnHover('/images/startpage/umlusecase.png')"
-										onmouseleave="hideOnHover()">
-										Lietojumgadījumu diagrammas
-										<br>
-										(funkcionalitātei)
-									</li>
-									<li onmouseenter="showOnHover('/images/startpage/umlsequence.png')"
-										onmouseleave="hideOnHover()">
-										Secības diagrammas
-										<br>
-										(objektu mijiedarbībai)
-									</li>
-									<li onmouseenter="showOnHover('/images/startpage/umlactivity.png')"
-										onmouseleave="hideOnHover()">
-										Aktivitāšu diagrammas
-										<br>
-										(biznesa procesiem)
-									</li>
-								</ul>
-							</div>
-							<div class="hover-images">
-								<p id="placeholder">
-									Uzvietojiet kursoru
-									<br>
-									uz diagrammas veida
-								</p>
-								<img id="img"
-									class="hidden"
-									alt="images on hover">
-							</div>
-						</div>
-					</div>
-					<div class="container">
-						<h3>
-							UML diagrammas iedalās 2 galvenajās kategorijās:
-						</h3>
-						<div class="row">
-							<div>
-								<h3>
-									Strukturālās diagrammas:
-								</h3>
-								<ul>
-									<li>
-										Klašu diagramma (visbiežāk lietotā)
-									</li>
-									<li>Objektu diagramma</li>
-									<li>
-										Komponenšu diagramma
-									</li>
-									<li>
-										Izvietojuma diagramma
-									</li>
-								</ul>
-							</div>
-							<div>
-								<h3>
-									Uzvedības diagrammas:
-								</h3>
-								<ul>
-									<li>
-										Lietojumgadījumu diagramma
-									</li>
-									<li>Secības diagramma</li>
-									<li>
-										Aktivitāšu diagramma
-									</li>
-									<li>Stāvokļu diagramma</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
+    <main id="sequence" class="hidden">
+      <div class="container  sticker sticker-diag">
+        <h1 class="title">Sekvences diagramma</h1>
 
-		<main id="sequence"
-			class="hidden">
-			<div class="container">
-				<h1 class="title">Sekvences diagramma</h1>
+        <div class="row">
+          <div class="container">
+            <h3 style="text-align: center">Izmantošanas gadījumi:</h3>
+            Risina sistēmas dinamiskās uzvedības vizualizācijas problēmu
+          </div>
+          <div class="container">
+            <h3>Izmanto, kad nepieciešams:</h3>
+            <ul>
+              <li>Dokumentēt un analizēt lietojumgadījumu scenārijus</li>
+              <li>Modelēt sarežģītu procesu loģiku</li>
+              <li>Saprast objektu mijiedarbības secību</li>
+              <li>Plānot API un mikroservisu komunikāciju</li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="row">
-					<div class="container">
-						<h3 style="text-align: center;">
-							Izmantošanas gadījumi:
-						</h3>
-						Risina sistēmas dinamiskās uzvedības vizualizācijas problēmu
-					</div>
-					<div class="container">
-						<h3>
-							Izmanto, kad nepieciešams:
-						</h3>
-						<ul>
-							<li>
-								Dokumentēt un analizēt lietojumgadījumu scenārijus
-							</li>
-							<li>
-								Modelēt sarežģītu procesu loģiku
-							</li>
-							<li>
-								Saprast objektu mijiedarbības secību
-							</li>
-							<li>
-								Plānot API un mikroservisu komunikāciju
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="row">
+          <div class="container">
+            <h3>Klasifikācija:</h3>
+            <p>
+              Pieder pie
+              <b>uzvedības</b>
+              (behavior) diagrammām, jo attēlo sistēmas dinamisko aspektu
+            </p>
+          </div>
+          <div class="container">
+            <h3>Definīcija un mērķis:</h3>
+            <ul>
+              <li>
+                Attēlo objektu
+                <b>mijiedarbību</b>
+                un
+                <b>ziņojumu apmaiņu</b>
+                laika gaitā
+              </li>
+              <li>
+                Parāda,
+                <b>kā</b>
+                objekti
+                <b>sadarbojas</b>
+                un
+                <b>kādā secībā</b>
+                notiek darbības
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="row">
-					<div class="container">
-						<h3>Klasifikācija:</h3>
-						<p>
-							Pieder pie
-							<b>uzvedības</b>
-							(behavior) diagrammām, jo attēlo sistēmas dinamisko aspektu
-						</p>
-					</div>
-					<div class="container">
-						<h3>
-							Definīcija un mērķis:
-						</h3>
-						<ul>
-							<li>
-								Attēlo objektu
-								<b>mijiedarbību</b>
-								un
-								<b>ziņojumu apmaiņu</b>
-								laika gaitā
-							</li>
-							<li>
-								Parāda,
-								<b>kā</b>
-								objekti
-								<b>sadarbojas</b>
-								un
-								<b>kādā secībā</b>
-								notiek darbības
-							</li>
-						</ul>
-					</div>
-				</div>
+        <div class="container">
+          <h3>Galvenie elementi:</h3>
+          <div class="image-cont">
+            <div id="image-desc">hello world</div>
+            <div id="image">
+              <img
+                height="100px"
+                src="./images/sequence/uml-activation-box-symbol.svg"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn" id="btn-prev">Iepriekšējais</button>
+            <button class="btn" id="btn-next">Nākamais</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      </ul>
+      <p>&copy;2024 Sofija Dišlovaja un Jūlija Žitkova</p>
+    </footer>
 
-				<div class="container">
-					<h3>Galvenie elementi:</h3>
-					<div class="image-cont">
-						<div id="image-desc">hello world</div>
-						<div id="image">
-							<img height="100px"
-								src="./images/sequence/uml-activation-box-symbol.svg">
-						</div>
-					</div>
-					<div class="row">
-						<button class="btn"
-							id="btn-prev">
-							Iepriekšējais
-						</button>
-						<button class="btn"
-							id="btn-next">
-							Nākamais
-						</button>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="waves">
-			  <div class="wave" id="wave1"></div>
-			  <div class="wave" id="wave2"></div>
-			  <div class="wave" id="wave3"></div>
-			  <div class="wave" id="wave4"></div>
-			</div>
-			<ul class="social-icon">
-			  <li class="social-icon__item"><a class="social-icon__link" href="#">
-				  <ion-icon name="logo-facebook"></ion-icon>
-				</a></li>
-			  <li class="social-icon__item"><a class="social-icon__link" href="#">
-				  <ion-icon name="logo-twitter"></ion-icon>
-				</a></li>
-			  <li class="social-icon__item"><a class="social-icon__link" href="#">
-				  <ion-icon name="logo-linkedin"></ion-icon>
-				</a></li>
-			  <li class="social-icon__item"><a class="social-icon__link" href="#">
-				  <ion-icon name="logo-instagram"></ion-icon>
-				</a></li>
-			</ul>
-			<ul class="menu">
-			  <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-			  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-			  <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-			  <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-			  <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-		
-			</ul>
-			<p>&copy;2024 Sofija Dišlovaja un Jūlija Žitkova</p>
-		  </footer>
-		  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-	</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
