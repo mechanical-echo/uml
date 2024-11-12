@@ -336,7 +336,10 @@ button:hover{
 .atbilde:hover{
     cursor: pointer;
     background: var(--accent-color);
-    color: #fff;
+}
+
+.atbilde:hover div {
+    color: white;
 }
 
 
