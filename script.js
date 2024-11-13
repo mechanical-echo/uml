@@ -117,3 +117,27 @@ function hideOnHover() {
     placeholder.classList.remove("hidden")
     image.classList.add("hidden")
 }
+
+
+let questions = document.querySelectorAll(".jautajums-row")
+
+
+function showAnswers(id) {
+    const answers = questions[id].children
+    Array.from(answers).forEach((answer) => {
+        answer.classList.add("answered");
+    })
+}
+
+
+
+function showContent(el) {
+    let div = el.nextSibling.nextSibling
+    if (div.style.display === "none") {
+        div.style.display = "flex";
+    } else {
+        div.style.display = "none";
+    }
+}
+
+
